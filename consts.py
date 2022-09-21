@@ -49,6 +49,6 @@ ANSWERS_MATRIX = [["1) 0", "2) 2 - 1 ", "3) More then 3"],
                    "3) Multiple uses bag"],
                   ["1) No", "2) Most of them", "3) Yes"],
                   ["1) Over 3 times", "2) 3 - 2 times", "3) 1 - 0 times"],
-                  ["1) An AC", "2) A fan", "Neither"]]
+                  ["1) An AC", "2) A fan", "3) Neither"]]
 
 ANSWER_FONT_SIZE = int(0.025 * WIN_WIDTH)

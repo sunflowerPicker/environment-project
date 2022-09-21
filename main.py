@@ -19,7 +19,6 @@ def start():
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
                     points += journal.handle_response(event.key)
                     question += 1
-                    print("here")
 
 def main():
     pygame.init()
