@@ -1,6 +1,7 @@
 import random
 import pygame
 import consts
+import time
 
 window = pygame.display.set_mode((consts.WIN_WIDTH, consts.WIN_HEIGHT))
 button_y = pygame.Rect(consts.YES_X, consts.YES_Y, consts.YES_WIDTH, consts.YES_HEIGHT)
