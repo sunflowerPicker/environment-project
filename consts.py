@@ -9,12 +9,13 @@ BLACK = (10, 10, 10)
 FONT_NAME = 'freesansbold.ttf'
 START_MESSAGE_1 = "Welcome to your journal, are you ready to enter your actions for the day?"
 START_MESSAGE_2 = "Press Enter to start!"
-START_FONT_SIZE = int(0.03 * WIN_WIDTH)
+START_FONT_SIZE = int(0.025 * WIN_WIDTH)
 START_COLOR = BLACK
 START1_LOCATION = (0, (WIN_HEIGHT - 50) // 2)
 START2_LOCATION = (0, (WIN_HEIGHT + 50) // 2)
 
 QUESTION_LOCATION = (0, 0)
+QUESTION_FONT_SIZE = int(0.03 * WIN_WIDTH)
 
 # QUESTION_1 = 1
 # QUESTION_2 = 2
