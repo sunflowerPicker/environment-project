@@ -3,7 +3,7 @@ import consts
 def set_empty_dict():
     dict_list = {}
     for i in range(1, 9):
-        # dict_list[i] =
+        dict_list[i] = 
         pass
 
 info = set_empty_dict()
