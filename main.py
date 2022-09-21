@@ -16,6 +16,7 @@ def main():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RETURN:
                     screen.draw_questions_background()
+                    screen.draw_message()
 
     pygame.quit()
 
