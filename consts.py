@@ -28,11 +28,21 @@ QUESTION_NUM_LIST = [QUESTION_1, QUESTION_2, QUESTION_3, QUESTION_4, QUESTION_5,
 
 QUESTION_ONE = "Did you recycle today?"
 QUESTION_TWO = "Did you take a shower today?"
-QUESTION_THREE = "Did you use any type of transportation today?"
+QUESTION_THREE = "What means of transportation did you use today?"
 QUESTION_FOUR = "How many times did you flush the toilet?"
 QUESTION_FIVE = "Did you go to a supermarket today?"
 QUESTION_SIX = "Did you remember to turn off the lights off the lights today?"
 QUESTION_SEVEN = "How many times did you do laundry today?"
 QUESTION_EIGHT = "Did you use an AC or a fan today?"
 QUESTIONS_LIST =[QUESTION_ONE, QUESTION_TWO, QUESTION_THREE, QUESTION_FOUR, QUESTION_FIVE, QUESTION_SIX, QUESTION_SEVEN, QUESTION_EIGHT]
+
+ANSWERS_MATRIX =[["1) 0", "2) 2 - 1 ", "3) More then 3"],
+                 ["1) More than 15 minutes", "2) 15 - 5 minutes", "3) Less than 5 minutes"],
+                 ["1) Car ", "2) Public transportation", "3) Walking/ biking/ none"],
+                 ["1) Over 6 times", "2) 4 - 3 times", "3) "],
+                 ["1) ", "2) ", "3) "],
+                 ["1) ", "2) ", "3) "],
+                 ["1) ", "2) ", "3) "],
+                 ["1) ", "2) ", "3) "],
+                 ["1) ", "2) ", "3) "]]
 
