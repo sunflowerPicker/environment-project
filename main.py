@@ -17,11 +17,12 @@ def start():
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
-                    points += journal.handle_response(event.key)
+                    points += journal.add_points(event.key)
                     question += 1
             if question == 7:
                 screen.draw_window()
                 screen.draw_tip()
+    journal.handle_response(points)
 
 
 def main():

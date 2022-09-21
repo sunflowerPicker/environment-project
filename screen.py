@@ -47,6 +47,30 @@ def draw_question(index):
     window.blit(question_text, questionrect)
     pygame.display.update()
 
+def draw_message_w_color(message, height, color):
+    message_font = pygame.font.Font(consts.FONT_NAME,
+                                    consts.START_FONT_SIZE)
+    message_text = message_font.render(message, True, color)
+    messagerect = message_text.get_rect()
+    messagerect.center = (consts.WIN_WIDTH / 2, height)
+    window.blit(message_text, messagerect)
+    pygame.display.update()
+
+
+def draw_good_day():
+    window.fill(consts.GREEN)
+    draw_message_w_color(consts.YOU_HAD_A, consts.YHA_HEIGHT, consts.WHITE)
+    draw_message_w_color(consts.GREEN, consts.COLOR_HEIGHT, consts.GREEN_COLOR)
+    draw_message_w_color(consts.DAY1, consts.DAY_HEIGHT, consts.WHITE)
+    pygame.display.update()
+
+def draw_medium_day():
+    window.fill(consts.YELLOW)
+    pygame.display.update()
+
+def draw_bad_day():
+    window.fill(consts.RED)
+    pygame.display.update()
 
 
 def draw_tip():
@@ -77,6 +101,4 @@ def draw_answers(index):
         window.blit(answer_text, answerrect)
         pygame.display.update()
         count += 1
-
-
 
