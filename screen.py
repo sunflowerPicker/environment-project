@@ -71,6 +71,9 @@ def draw_good_day():
 
 def draw_medium_day():
     window.fill(consts.YELLOW)
+    draw_message_w_color(consts.YOU_HAD_A, consts.YHA_HEIGHT, consts.WHITE)
+    draw_message_w_color(consts.YELLOW_DAY, consts.COLOR_HEIGHT, consts.WORD_YELLOW)
+    draw_message_w_color(consts.DAY1, consts.DAY_HEIGHT, consts.WHITE)
     pygame.display.update()
 
 
