@@ -1,5 +1,4 @@
 import random
-
 import pygame
 import consts
 
@@ -49,7 +48,6 @@ def draw_question(index):
     pygame.display.update()
 
 
-<<<<<<< HEAD
 def draw_tip():
     rand = random.randint(0, len(consts.TIPS_LIST) - 1)
     tip_font = pygame.font.Font(consts.FONT_NAME, consts.START_FONT_SIZE)
@@ -64,7 +62,8 @@ def draw_tip():
     window.blit(intro_tip_text, intro_tip_rect)
 
     pygame.display.update()
-=======
+
+
 def draw_answers(index):
     count = 1
     for j in range(3):
@@ -78,8 +77,3 @@ def draw_answers(index):
         pygame.display.update()
         count += 1
 
-
-
-
-
->>>>>>> 91f2c94ae454c082b20d38f96bb5a2e5bcd07a04
