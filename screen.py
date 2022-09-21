@@ -20,7 +20,7 @@ def draw_message(message, font_size, color, location):
 
 def draw_window():
     pygame.display.set_caption("Journal")
-    window.fill(consts.BLACK)
+    window.fill(consts.WHITE)
     pygame.display.update()
 
 
@@ -28,11 +28,18 @@ def draw_questions_background():
     pygame.display.update()
 
 
+<<<<<<< HEAD
 def draw_questions(i):
     index = i
     question_font = pygame.font.Font('calibri.ttf', consts.START_FONT_SIZE)
     question_text = question_font.render(consts.QUESTIONS_LIST[index], True, consts.WHITE)
+=======
+def draw_question(i):
+    index = int(i)
+    question_font = pygame.font.Font(consts.FONT_NAME, consts.START_FONT_SIZE)
+    question_text = question_font.render(consts.QUESTIONS_LIST[index], True, consts.BLACK)
+>>>>>>> 855089669cb19401cb9b6a3ace1718446e8074b5
     questionrect = question_text.get_rect()
     questionrect.center = (consts.WIN_WIDTH/2, consts.WIN_HEIGHT/2)
     window.blit(question_text, questionrect)
-
+    pygame.display.update()
