@@ -38,6 +38,9 @@ def draw_question(index):
 
 def draw_good_day():
     window.fill(consts.GREEN)
+    draw_message(consts.YOU_HAD_A, consts.START_FONT_SIZE, consts.WHITE, consts.YHA_LOCATION)
+    draw_message(consts.GREEN, consts.START_FONT_SIZE, consts.GREEN_COLOR, consts.COLOR_LOCATION)
+    draw_message(consts.DAY1, consts.START_FONT_SIZE, consts.WHITE, consts.DAY_LOCATION)
     pygame.display.update()
 
 def draw_medium_day():

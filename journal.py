@@ -11,6 +11,7 @@ def add_points(key):
     if key == pygame.K_3:
         return 2
 
+
 def handle_response(points):
     if 0 <= points <= 4:
         screen.draw_bad_day()

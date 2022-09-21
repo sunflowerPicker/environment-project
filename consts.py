@@ -8,6 +8,7 @@ BLACK = (10, 10, 10)
 GREEN = (50, 205, 50)
 YELLOW = (255, 255, 51)
 RED = (255, 0, 0)
+GREEN_COLOR = (0, 100, 0)
 
 FONT_NAME = 'freesansbold.ttf'
 START_MESSAGE_1 = "Welcome to your journal, are you ready to enter your actions for the day?"
@@ -40,3 +41,13 @@ QUESTION_SEVEN = "How many times did you do laundry today?"
 QUESTION_EIGHT = "Did you use an AC or a fan today?"
 QUESTIONS_LIST = [QUESTION_ONE, QUESTION_TWO, QUESTION_THREE, QUESTION_FOUR, QUESTION_FIVE, QUESTION_SIX, QUESTION_SEVEN, QUESTION_EIGHT]
 
+YOU_HAD_A = "You had a"
+GREEN_DAY = "GREEN"
+YELLOW_DAY = "YELLOW"
+RED_DAY = "RED"
+DAY1 = "day! :)"
+DAY2 = "day! :/"
+DAY3 = "day :("
+YHA_LOCATION = (WIN_WIDTH, WIN_HEIGHT//4)
+COLOR_LOCATION = (WIN_WIDTH, WIN_HEIGHT//4 + 50)
+DAY_LOCATION = (WIN_WIDTH, WIN_HEIGHT//4 + 100)
