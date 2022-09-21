@@ -10,8 +10,11 @@ def start():
     question = 0
     while question != len(consts.QUESTIONS_LIST)-1:
         for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
             screen.draw_window()
             screen.draw_question(question)
+            screen.draw_answers(question)
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
                     points += journal.handle_response(event.key)

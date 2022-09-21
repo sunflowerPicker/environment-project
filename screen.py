@@ -28,18 +28,29 @@ def draw_questions_background():
     pygame.display.update()
 
 
-<<<<<<< HEAD
-def draw_questions(i):
-    index = i
-    question_font = pygame.font.Font('calibri.ttf', consts.START_FONT_SIZE)
-    question_text = question_font.render(consts.QUESTIONS_LIST[index], True, consts.WHITE)
-=======
-def draw_question(i):
-    index = int(i)
+def draw_question(index):
     question_font = pygame.font.Font(consts.FONT_NAME, consts.START_FONT_SIZE)
     question_text = question_font.render(consts.QUESTIONS_LIST[index], True, consts.BLACK)
->>>>>>> 855089669cb19401cb9b6a3ace1718446e8074b5
     questionrect = question_text.get_rect()
-    questionrect.center = (consts.WIN_WIDTH/2, consts.WIN_HEIGHT/2)
+    questionrect.center = (consts.WIN_WIDTH/2, consts.WIN_HEIGHT/4)
     window.blit(question_text, questionrect)
     pygame.display.update()
+
+
+def draw_answers(index):
+    count = 1
+    for j in range(3):
+        answer = consts.ANSWERS_MATRIX[index][j]
+        height = consts.WIN_HEIGHT / 4 + 50 * count
+        answer_font = pygame.font.Font(consts.FONT_NAME, consts.ANSWER_FONT_SIZE)
+        answer_text = answer_font.render(answer, True, consts.BLACK)
+        answerrect = answer_text.get_rect()
+        answerrect.center = (consts.WIN_WIDTH / 2, height)
+        window.blit(answer_text, answerrect)
+        pygame.display.update()
+        count += 1
+
+
+
+
+
