@@ -3,13 +3,17 @@ import screen
 import time
 import consts
 import journal
+pygame.font.init()
 
 
 def main():
     pygame.init()
     screen.draw_window()
     run = True
+    started = False
     while run:
+        if not started:
+            screen.draw_starting_message()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
