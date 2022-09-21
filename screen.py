@@ -1,5 +1,4 @@
 import random
-
 import pygame
 import consts
 
@@ -80,6 +79,7 @@ def draw_tip():
 
     pygame.display.update()
 
+
 def draw_answers(index):
     count = 1
     for j in range(3):
@@ -92,6 +92,5 @@ def draw_answers(index):
         window.blit(answer_text, answerrect)
         pygame.display.update()
         count += 1
-
 
 

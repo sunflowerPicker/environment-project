@@ -18,14 +18,6 @@ NO_WIDTH = 100
 NO_X = 600
 NO_Y = 300
 
-
-FONT_NAME = 'calibri'
-START_MESSAGE_1 = "Welcome to your journal, are you ready to enter your actions for the day?"
-START_MESSAGE_2 = "Press Enter to start!"
-START_FONT_SIZE = int(0.025 * WIN_WIDTH)
-START_COLOR = WHITE
-START1_LOCATION = (WIN_WIDTH + 50, (WIN_HEIGHT - 50) // 2)
-START2_LOCATION = (WIN_WIDTH + 50, (WIN_HEIGHT + 50) // 2)
 FONT_NAME = 'freesansbold.ttf'
 START_MESSAGE_1 = "Welcome to your journal, are you ready to enter your actions for the day?"
 START_MESSAGE_2 = "Press Enter to start!"
@@ -90,4 +82,3 @@ ANSWERS_MATRIX = [["1) 0", "2) 2 - 1 ", "3) More then 3"],
                   ["1) An AC", "2) A fan", "3) Neither"]]
 
 ANSWER_FONT_SIZE = int(0.025 * WIN_WIDTH)
-
