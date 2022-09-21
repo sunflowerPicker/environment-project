@@ -7,7 +7,7 @@ import journal
 def start():
     points = 0
     question = 0
-    while question != len(consts.QUESTIONS_LIST):
+    while question != len(consts.QUESTIONS_LIST)-1:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -19,9 +19,6 @@ def start():
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
                     points += journal.add_points(event.key)
                     question += 1
-            if question == 7:
-                screen.draw_window()
-                screen.draw_tip()
     journal.handle_response(points)
 
 
