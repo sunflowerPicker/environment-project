@@ -1,9 +1,7 @@
 import pygame
 import screen
-import time
 import consts
 import journal
-# pygame.font.init()
 
 
 def start():

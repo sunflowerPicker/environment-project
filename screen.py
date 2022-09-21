@@ -2,18 +2,11 @@ import random
 import pygame
 import consts
 import time
+import os
 
 window = pygame.display.set_mode((consts.WIN_WIDTH, consts.WIN_HEIGHT))
-button_y = pygame.Rect(consts.YES_X, consts.YES_Y, consts.YES_WIDTH, consts.YES_HEIGHT)
-button_n = pygame.Rect(consts.NO_X, consts.NO_Y, consts.NO_WIDTH, consts.NO_HEIGHT)
 pygame.init()
 font = pygame.font.SysFont(consts.FONT_NAME, 20)
-message_yes = font.render('YES', True, consts.WHITE, consts.BLACK)
-message_no = font.render('NO', True, consts.WHITE, consts.BLACK)
-pygame.draw.rect(window, consts.BLACK, button_y)
-pygame.draw.rect(window, consts.BLACK, button_n)
-window.blit(message_yes, (consts.YES_X + 40, consts.YES_Y + 20))
-window.blit(message_no, (consts.NO_X + 40, consts.NO_Y + 20))
 
 
 def draw_starting_message():
@@ -33,6 +26,9 @@ def draw_message(message, height):
 def draw_window():
     pygame.display.set_caption("Journal")
     window.fill(consts.WHITE)
+    background_image = pygame.image.load(os.path.join("environment", consts.PAPER_FILE))
+    background = pygame.transform.scale(background_image, (consts.WIN_WIDTH, consts.WIN_HEIGHT))
+    window.blit(background, (0, 0))
     pygame.display.update()
 
 
@@ -59,6 +55,8 @@ def draw_medium_day():
 
 def draw_bad_day():
     window.fill(consts.RED)
+    time.sleep(1)
+    draw_tip()
     pygame.display.update()
 
 
