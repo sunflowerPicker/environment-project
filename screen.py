@@ -1,3 +1,5 @@
+import random
+
 import pygame
 import consts
 
@@ -45,4 +47,20 @@ def draw_question(i):
     questionrect = question_text.get_rect()
     questionrect.center = (consts.WIN_WIDTH/2, consts.WIN_HEIGHT/2)
     window.blit(question_text, questionrect)
+    pygame.display.update()
+
+
+def draw_tip():
+    rand = random.randint(0, len(consts.TIPS_LIST) - 1)
+    tip_font = pygame.font.Font(consts.FONT_NAME, consts.START_FONT_SIZE)
+    tip_text = tip_font.render(consts.TIPS_LIST[rand], True, consts.BLACK)
+    tip_rect = tip_text.get_rect()
+    tip_rect.center = (consts.WIN_WIDTH / 2, consts.WIN_HEIGHT / 2)
+    window.blit(tip_text, tip_rect)
+
+    intro_tip_text = tip_font.render(consts.INTRO_TIP, True, consts.BLACK)
+    intro_tip_rect = intro_tip_text.get_rect()
+    intro_tip_rect.center = (consts.WIN_WIDTH / 2, consts.WIN_HEIGHT / 4)
+    window.blit(intro_tip_text, intro_tip_rect)
+
     pygame.display.update()
