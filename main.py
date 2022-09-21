@@ -14,7 +14,6 @@ def start():
             screen.draw_window()
             screen.draw_question(question)
             screen.draw_answers(question)
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
                     points += journal.add_points(event.key)
