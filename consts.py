@@ -5,6 +5,9 @@ WIN_WIDTH = 1000
 
 WHITE = (255, 255, 255)
 BLACK = (10, 10, 10)
+GREEN = (50, 205, 50)
+YELLOW = (255, 255, 51)
+RED = (255, 0, 0)
 
 FONT_NAME = 'freesansbold.ttf'
 START_MESSAGE_1 = "Welcome to your journal, are you ready to enter your actions for the day?"

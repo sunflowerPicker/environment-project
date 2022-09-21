@@ -5,18 +5,21 @@ import consts
 import journal
 pygame.font.init()
 
+
 def start():
     points = 0
     question = 0
     while question != len(consts.QUESTIONS_LIST)-1:
         for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
             screen.draw_window()
             screen.draw_question(question)
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1 or event.key == pygame.K_2 or event.key == pygame.K_3:
-                    points += journal.handle_response(event.key)
+                    points += journal.add_points(event.key)
                     question += 1
-                    print("here")
+    journal.handle_response(points)
 
 def main():
     pygame.init()
