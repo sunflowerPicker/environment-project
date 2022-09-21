@@ -3,6 +3,8 @@ import screen
 
 
 def main():
+    pygame.init()
+    screen.draw_window()
     run = True
     while run:
         for event in pygame.event.get():
