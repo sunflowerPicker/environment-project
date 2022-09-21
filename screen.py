@@ -12,3 +12,4 @@ def draw_window():
 
 def draw_questions_background():
     pygame.display.update()
+

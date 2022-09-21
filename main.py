@@ -8,10 +8,8 @@ import journal
 def main():
     pygame.init()
     screen.draw_window()
-    clock = pygame.time.Clock()
     run = True
     while run:
-        clock.tick(consts.FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
