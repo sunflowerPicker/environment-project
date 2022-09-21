@@ -28,5 +28,11 @@ def draw_questions_background():
     pygame.display.update()
 
 
-
+def draw_questions(i):
+    index = i
+    question_font = pygame.font.Font('freesansbold.ttf', consts.START_FONT_SIZE)
+    question_text = question_font.render(consts.QUESTIONS_LIST[index], True, consts.WHITE)
+    questionrect = question_text.get_rect()
+    questionrect.center = (consts.WIN_WIDTH/2, consts.WIN_HEIGHT/2)
+    window.blit(question_text, questionrect)
 

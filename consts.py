@@ -14,6 +14,7 @@ START_COLOR = WHITE
 START1_LOCATION = (WIN_WIDTH+50, (WIN_HEIGHT-50)//2)
 START2_LOCATION = (WIN_WIDTH+50, (WIN_HEIGHT+50)//2)
 
+QUESTION_LOCATION = (0,0)
 
 QUESTION_1 = 1
 QUESTION_2 = 2
@@ -30,7 +31,7 @@ QUESTION_TWO = "Did you take a shower today?"
 QUESTION_THREE = "Did you use any type of transportation today?"
 QUESTION_FOUR = "How many times did you flush the toilet?"
 QUESTION_FIVE = "Did you go to a supermarket today?"
-QUESTION_SIX = "Did you remember to turn off the lights and electrical devices when you weren’t using them anymore?"
+QUESTION_SIX = "Did you remember to turn off the lights off the lights today?"
 QUESTION_SEVEN = "How many times did you do laundry today?"
 QUESTION_EIGHT = "Did you use an AC or a fan today?"
 QUESTIONS_LIST =[QUESTION_ONE, QUESTION_TWO, QUESTION_THREE, QUESTION_FOUR, QUESTION_FIVE, QUESTION_SIX, QUESTION_SEVEN, QUESTION_EIGHT]
