@@ -1,4 +1,4 @@
-import consts
+
 import pygame
 import screen
 
