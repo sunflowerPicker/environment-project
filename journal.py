@@ -1,19 +1,11 @@
 import consts
-
-def set_empty_dict():
-    dict_list = {}
-    for i in range(1, 9):
-        dict_list[i] = 
-        pass
-
-info = set_empty_dict()
+import pygame
 
 
-def get_information():
-    return info
-
-
-def set_information(info_dict):
-    info.clear()
-    for x in info_dict:
-        info.update(info_dict)
+def handle_response(key):
+    if key == pygame.K_1:
+        return 0
+    if key == pygame.K_2:
+        return 1
+    if key == pygame.K_3:
+        return 2

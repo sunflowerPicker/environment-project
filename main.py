@@ -9,22 +9,22 @@ pygame.font.init()
 def main():
     pygame.init()
     screen.draw_window()
+    screen.draw_starting_message()
     run = True
-    started = False
+    points = 0
     while run:
-<<<<<<< HEAD
-        clock.tick(consts.FPS)
-        if not started:
-            screen.draw_starting_message()
-=======
->>>>>>> ea25afe243bc24916e8f22682b66fefedef5b00a
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RETURN:
                     screen.draw_questions_background()
-                    screen.draw_message()
+                    for i in range(consts.QUESTIONS_LIST):
+                        screen.draw_question(i)
+                        points += journal.handle_response(event.key)
+    day = journal.which_day(points)
+    screen.draw_day_review(day)
+
 
     pygame.quit()
 

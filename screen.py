@@ -20,7 +20,7 @@ def draw_message(message, font_size, color, location):
 
 def draw_window():
     pygame.display.set_caption("Journal")
-    window.fill(consts.BLACK)
+    window.fill(consts.WHITE)
     pygame.display.update()
 
 
