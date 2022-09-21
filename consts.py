@@ -8,12 +8,10 @@ YELLOW = (255, 251, 204)
 RED = (255, 0, 0)
 GREEN_COLOR = (0, 100, 0)
 WORD_GREEN = (30, 138, 26)
-<<<<<<< HEAD
 RED_COLOR = (128, 0, 0)
 CRIMSON = (220, 20, 60)
-=======
 WORD_YELLOW = (255, 255, 0)
->>>>>>> dae941a4ed6e0bfb233296cb16f2ce8a09ce42a7
+
 
 YES_HEIGHT = 60
 YES_WIDTH = 100

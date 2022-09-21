@@ -79,7 +79,10 @@ def draw_medium_day():
 
 def draw_bad_day():
     window.fill(consts.RED)
-    pygame.display.update()
+    draw_message_w_color(consts.YOU_HAD_A, consts.YHA_HEIGHT, consts.WHITE)
+    draw_message_w_color(consts.RED_DAY, consts.COLOR_HEIGHT,
+                         consts.CRIMSON)
+    draw_message_w_color(consts.DAY1, consts.DAY_HEIGHT, consts.WHITE)
 
 
 def draw_tip():
