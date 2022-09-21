@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 91f2c94ae454c082b20d38f96bb5a2e5bcd07a04
 import pygame
 
 

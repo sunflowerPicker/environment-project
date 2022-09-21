@@ -52,14 +52,13 @@ QUESTION_FIVE = "What type of bag did you take from the supermarket?"
 QUESTION_SIX = "Did you remember to turn off the lights off the lights today?"
 QUESTION_SEVEN = "How many times did you do laundry today?"
 QUESTION_EIGHT = "Did you use an AC or a fan today?"
-<<<<<<< HEAD
 QUESTIONS_LIST = [QUESTION_ONE, QUESTION_TWO, QUESTION_THREE, QUESTION_FOUR, QUESTION_FIVE, QUESTION_SIX,
                   QUESTION_SEVEN, QUESTION_EIGHT]
 
 TIPS_LIST = ["plant a tree!", "pick up trash from the street!", "clean the beach from garbage!",
              "remember to separate your trash", "call a friend and remind them to recycle"]
 INTRO_TIP = "Your tip of the day:"
-=======
+
 QUESTIONS_LIST = [QUESTION_ONE, QUESTION_TWO, QUESTION_THREE, QUESTION_FOUR,
                   QUESTION_FIVE, QUESTION_SIX, QUESTION_SEVEN, QUESTION_EIGHT]
 
@@ -76,4 +75,4 @@ ANSWERS_MATRIX = [["1) 0", "2) 2 - 1 ", "3) More then 3"],
                   ["1) An AC", "2) A fan", "3) Neither"]]
 
 ANSWER_FONT_SIZE = int(0.025 * WIN_WIDTH)
->>>>>>> 91f2c94ae454c082b20d38f96bb5a2e5bcd07a04
+
